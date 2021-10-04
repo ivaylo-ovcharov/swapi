@@ -2,7 +2,6 @@
   <header class="sticky top-0 bg-header border-b border-headerBorder z-30">
     <div class="px-8 sm:px-8 lg:px-8">
       <div class="flex items-center justify-between h-16 -mb-px">
-        <!-- Header: Left side -->
         <img
           v-if="getTheme === 'light'"
           src="@/assets/logo-dark.svg"

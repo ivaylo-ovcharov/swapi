@@ -1,6 +1,6 @@
 <template>
   <div>
-    <f-base-modal
+    <BaseModal
       :modal-open="openModal"
       headline="Planet details"
       @closeModal="closeModal()"
@@ -14,27 +14,27 @@
       </div>
       <div class="py-4">
         <div class="flex flex-wrap justify-end space-x-2">
-          <FButton @click="closeModal()">
+          <Button @click="closeModal()">
             Got it!
-          </FButton>
+          </Button>
         </div>
       </div>
-    </f-base-modal>
+    </BaseModal>
   </div>
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import FBaseModal from '@/components/FBaseModal.vue'
+import BaseModal from '@/components/BaseModal.vue'
 import LineralProgress from '@/components/LineralProgress.vue'
-import FButton from '@/components/FButton.vue'
+import Button from '@/components/Button.vue'
 
 
 export default {
     name: "PlanetModal",
     components: {
-        FBaseModal,
+        BaseModal,
         LineralProgress,
-        FButton
+        Button
     },
     props: {
         selectedPlanet: {
@@ -50,7 +50,7 @@ export default {
         }
     },
     computed: {
-        ...mapGetters(['getPlanet', 'getPlanetLoading', 'getPlanetCache', 'getPlanetError']),
+        ...mapGetters(['getPlanet', 'getPlanetLoading']),
     },
     watch: {
         selectedPlanet: function (val) {

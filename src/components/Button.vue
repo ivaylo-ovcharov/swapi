@@ -21,7 +21,7 @@
 </template>
 <script>
 export default {
-  name: 'FButton',
+  name: 'Button',
    props: {
     outlined: {
       type: Boolean,

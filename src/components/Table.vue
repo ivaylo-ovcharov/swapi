@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="mt-8">
-      <f-pagination 
+      <Pagination
         :page="page" 
         :items-per-page="10" 
         :items-count="count"
@@ -53,13 +53,13 @@
 <script>
 import TableHead from '@/components/TableHead.vue'
 import TableNoData from '@/components/TableNoData.vue'
-import FPagination from '@/components/FPagination.vue'
+import Pagination from '@/components/Pagination.vue'
 import LineralProgress from '@/components/LineralProgress.vue'
 
 export default {
   name: 'Table',
    components: {
-    FPagination,
+    Pagination,
     LineralProgress,
     TableHead,
     TableNoData

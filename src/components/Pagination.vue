@@ -7,22 +7,22 @@
     >
       <ul class="flex justify-center">
         <li class="ml-3 first:ml-0">
-          <f-button
+          <Button
             outlined
             :disabled="disablePrevButton"
             @click="$emit('prev-page')"
           >
             &lt;- Previous
-          </f-button>
+          </Button>
         </li>
         <li class="ml-3 first:ml-0">
-          <f-button
+          <Button
             outlined
             :disabled="disableNextButton"
             @click="$emit('next-page')"
           >
             Next -&gt;
-          </f-button>
+          </Button>
         </li>
       </ul>
     </nav>
@@ -35,12 +35,12 @@
 </template>
 
 <script>
-import FButton from '@/components/FButton.vue'
+import Button from '@/components/Button.vue'
 
 export default {
   name: 'FPagination',
   components: {
-    FButton,
+    Button,
   },
   props: {
     page: {

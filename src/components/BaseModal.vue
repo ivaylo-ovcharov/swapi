@@ -69,7 +69,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 export default {
-  name: 'FBaseModal',
+  name: 'BaseModal',
   // eslint-disable-next-line vue/require-prop-types
   props: ['id', 'modalOpen', 'headline'],
   emits: ['close-modal'],

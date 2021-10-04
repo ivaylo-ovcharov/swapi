@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-8">
+  <div>
     <h1 class="text-2xl md:text-3xl text-primaryText font-bold">
       {{ title }} ✨
     </h1>
