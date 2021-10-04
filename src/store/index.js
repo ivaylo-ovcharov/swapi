@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
-import people from '../store/modules/people'
-import planets from '../store/modules/planets'
-import theme from '../store/modules/theme'
+import people from '../store/modules/people.module'
+import planets from '../store/modules/planets.module'
+import theme from '../store/modules/theme.module'
 
 
 const store = createStore({

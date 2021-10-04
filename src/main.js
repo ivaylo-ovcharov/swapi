@@ -14,6 +14,6 @@ library.add(fas)
 const app = createApp(App)
 app.use(router)
 app.use(store)
-app.component('fa', FontAwesomeIcon)
+app.component('Fa', FontAwesomeIcon)
 
 app.mount('#app')

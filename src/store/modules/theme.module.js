@@ -15,7 +15,7 @@ export default {
         }
     },
     actions: {
-        changeTheme ({ dispatch, commit, state }, theme) {
+        changeTheme ({ commit }, theme) {
             localStorage.setItem('theme', theme)
             commit('CHANGE_THEME', theme)
         }

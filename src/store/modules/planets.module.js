@@ -29,7 +29,7 @@ export default {
         }
     },
     actions: {
-        fetchPlanet ({ dispatch, commit, state }, planetUrl) {
+        fetchPlanet ({ commit, state }, planetUrl) {
             commit('CHANGE_PLANET_LOADING', true)
             if (!state.cache[planetUrl]) {
                 axios.get(planetUrl).then((response) => {

@@ -8,7 +8,6 @@ export default {
         cache: {},
         count: 0,
         loading: false,
-        error: {}
     }),
 
     getters: {
@@ -36,7 +35,7 @@ export default {
       },
     },
     actions: {
-        fetchPeople ({ dispatch, commit, state }, queryValues) {
+        fetchPeople ({ commit, state }, queryValues) {
             commit('CHANGE_LOADING', true)
             const requestUrl = queryBuilder('people', queryValues)
             if (!state.cache[requestUrl]) {

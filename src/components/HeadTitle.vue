@@ -1,7 +1,9 @@
 <template>
-    <div class="mb-8">
-        <h1 class="text-2xl md:text-3xl text-gray-800 font-bold">{{ title }} ✨</h1>
-    </div>
+  <div class="mb-8">
+    <h1 class="text-2xl md:text-3xl text-primaryText font-bold">
+      {{ title }} ✨
+    </h1>
+  </div>
 </template>
 <script>
 export default {

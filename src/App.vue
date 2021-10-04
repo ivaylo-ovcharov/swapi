@@ -5,8 +5,8 @@
         <Header
           :sidebar-open="sidebarOpen"
           @toggle-sidebar="sidebarOpen = !sidebarOpen"
-      />
-          <router-view />
+        />
+        <router-view />
       </div>
     </div>
   </AppLayout>

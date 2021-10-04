@@ -1,11 +1,14 @@
 <template>
   <div>
-
-  
-  <div class="w-full bg-tableBackground shadow-lg rounded-sm border border-tableBorder">
-    <header v-if="headline" class="px-5 py-4">
-      <h2 class="font-semibold text-primaryText">{{ headline }}</h2>
-    </header>
+    <div class="w-full bg-tableBackground shadow-lg rounded-sm border border-tableBorder">
+      <header
+        v-if="headline"
+        class="px-5 py-4"
+      >
+        <h2 class="font-semibold text-primaryText">
+          {{ headline }}
+        </h2>
+      </header>
     
       <div class="overflow-x-auto">                
         <LineralProgress v-if="loading" />
@@ -23,7 +26,10 @@
                 :key="headerIndex" 
                 class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px text-primaryText"
               >
-                <slot :name="header.val" :item="item[header.val]">
+                <slot
+                  :name="header.val"
+                  :item="item[header.val]"
+                >
                   <span>{{ item[header.val] === 'unknown' ? '-' : item[header.val] }}</span> 
                 </slot>
               </td>
@@ -32,16 +38,16 @@
         </table>
         <TableNoData v-if="items && !items.length" />
       </div>
-  </div>
-     <div class="mt-8">
-        <f-pagination 
-          :page="page" 
-          :itemsPerPage="10" 
-          :itemsCount="count"
-          @nextPage="nextPage"
-          @prevPage="prevPage"
-         />
-      </div>
+    </div>
+    <div class="mt-8">
+      <f-pagination 
+        :page="page" 
+        :items-per-page="10" 
+        :items-count="count"
+        @nextPage="nextPage"
+        @prevPage="prevPage"
+      />
+    </div>
   </div>
 </template>
 <script>
@@ -86,6 +92,7 @@ export default {
       default: () => false
     }
   },
+  emits: ['change-page'],
   methods: {
     nextPage () {
       this.$emit('change-page', this.page + 1)

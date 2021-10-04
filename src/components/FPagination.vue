@@ -1,12 +1,28 @@
 <template>
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-    <nav class="mb-4 sm:order-1" role="navigation" aria-label="Navigation">
+    <nav
+      class="mb-4 sm:order-1"
+      role="navigation"
+      aria-label="Navigation"
+    >
       <ul class="flex justify-center">
         <li class="ml-3 first:ml-0">
-          <f-button @click="$emit('prev-page')" outlined :disabled="disablePrevButton">&lt;- Previous</f-button>
+          <f-button
+            outlined
+            :disabled="disablePrevButton"
+            @click="$emit('prev-page')"
+          >
+            &lt;- Previous
+          </f-button>
         </li>
         <li class="ml-3 first:ml-0">
-          <f-button @click="$emit('next-page')" outlined :disabled="disableNextButton"> Next -&gt; </f-button>
+          <f-button
+            outlined
+            :disabled="disableNextButton"
+            @click="$emit('next-page')"
+          >
+            Next -&gt;
+          </f-button>
         </li>
       </ul>
     </nav>
@@ -43,6 +59,7 @@ export default {
       default: () => 500
     },
   },
+  emits: ['prev-page', 'next-page'],
   computed: {
       showingFrom () {
           return this.itemsCount === 0 ? 0 :  1 + ( this.page - 1 ) * this.itemsPerPage
