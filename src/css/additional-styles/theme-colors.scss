@@ -1,0 +1,45 @@
+.theme-light {
+    --primary: #6366F1;
+    --primaryHover: #4F46E5;
+    --header: white;
+    --headerBorder: #E5E7EB;
+    --body: #F1F5F9;
+    --primaryText: #111827;
+    --textDark: #4B5563;
+    --tableBackground: white;
+    --tableSortBackground: #F9FAFB;
+    --tableRowHover: #F3F4F6;
+    --tableBorder: #E5E7EB;
+    --input: white;
+    --inputBorder: #D1D5DB;
+    --inputPlaceholder: #D1D5DB;
+    --inputText: #111827;
+    --buttonBackground: white;
+    --buttonDisabledText: #D1D5DB;
+    --buttonBorder: #E5E7EB;
+    --modalBackground: white;
+    --modalBorder: #E5E7EB;
+}
+
+.theme-dark {
+    --primary: #EF4444;
+    --primaryHover: #DC2626;
+    --header: #282747;
+    --headerBorder: #363557;
+    --body: #22213B;
+    --primaryText: #F9FAFB;
+    --textDark: #D1D5DB;
+    --tableBackground: #282747;
+    --tableSortBackground: #25243F;
+    --tableRowHover: #323155;
+    --tableBorder: #363557;
+    --input: #282747;
+    --inputBorder: #363557;
+    --inputPlaceholder: #A7A6BF;
+    --inputText: #D1D5DB;
+    --buttonBackground: #282747;
+    --buttonDisabledText: #A7A6BF;
+    --buttonBorder: #363557;
+    --buttonBackground: #282747;
+    --modalBorder: #25243F;
+}
